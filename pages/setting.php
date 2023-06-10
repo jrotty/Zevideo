@@ -55,13 +55,12 @@
                                             </div>登录/登出
                                         </h2>
                                         <?php if($this->user->hasLogin()): ?>
-                                        <a href="<?php $this->options->adminUrl(); ?>" data-ajax="false"
-                                            class="shadow-sm text-center mt-3 p-3 text-gray-100 bg-teal-500 dark:bg-teal-600 rounded-lg"
+                                        <a href="<?php $this->options->adminUrl(); ?>" class="shadow-sm text-center mt-3 p-3 text-gray-100 bg-teal-500 dark:bg-teal-600 rounded-lg"
                                             target="_blank">进入后台
                                         </a>
 
-                                        <a href="<?php $this->options->logoutUrl(); ?>" data-ajax="false"
-                                            class="shadow-sm text-center mt-3 p-3 text-gray-100 bg-red-500 rounded-lg">登出账号
+                                        <a href="<?php $this->options->logoutUrl(); ?>"
+                                            class="shadow-sm text-center mt-3 p-3 text-gray-100 bg-red-500 rounded-lg" nopjax>登出账号
                                         </a>
                                         <?php else: ?>
                                         <a href="<?php if(array_key_exists('TePass', Typecho_Plugin::export()['activated'])){echo tepasssignin;}else{$this->options->adminUrl('login.php');} ?>"
