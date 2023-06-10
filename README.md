@@ -10,7 +10,7 @@ Typecho开源视频主题
 
 ### 对typecho改动
 **1,让文章根据最后编辑时间排序**
-在typecho的 var/Widget 路径下编辑 Archive.php 文件，在764行左右找到如下代码
+在 `Typecho` 的 `var/Widget` 路径下编辑 `Archive.php` 文件，在 `764` 行左右找到如下代码
 ```php
         $select->order('table.contents.created', Db::SORT_DESC)
             ->page($this->currentPage, $this->parameter->pageSize);
