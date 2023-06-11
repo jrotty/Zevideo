@@ -36,7 +36,6 @@ var globals = {"post_id":"<?php $this->cid(); ?>","post_url":"<?php $this->perma
 <div id="post">
 <?php if($this->fields->mp4){ $this->need('player.php');}
 else{
-$this->content=createCatalog($this->content);
 $this->content=setshortcode($this->content);
 $this->content();
 } ?>
