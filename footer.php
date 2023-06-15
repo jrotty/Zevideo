@@ -55,7 +55,13 @@ document.addEventListener('pjax:complete', function (){
         Alpine.store('ze').searchtext='';//搜索词清空
         document.querySelector("loader").classList.remove("active");
     }, 20);
-
+  
+    if (typeof ga !== 'undefined'){//兼容谷歌统计
+        ga('send', 'pageview', location.pathname + location.search);
+    } 
+    if (typeof _hmt !== 'undefined'){//兼容百度统计
+      _hmt.push(['_trackPageview', location.pathname + location.search]);
+    }  
     main.all();
 });
 </script>
