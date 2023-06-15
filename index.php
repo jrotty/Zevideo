@@ -5,7 +5,7 @@
  * @package Zevideo
  * @author 泽泽社长
  * @version 1.5.0
- * @link https://blog.zezeshe.com/archives/typecho-moeos.html
+ * @link https://blog.zezeshe.com/archives/zevideo-typecho-open.html
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
