@@ -1,6 +1,6 @@
 document.addEventListener('alpine:init', () => {
     Alpine.data('data', () => ({
-        Copyright:'<span class="text-xs">Copyright © By <a href="https://blog.zezeshe.com/archives/typecho-moeos.html" data-ajax="false" target="_blank">MoeOS</a></span>',
+        Copyright:'<span class="text-xs">Copyright © By <a href="https://github.com/jrotty/Zevideo" data-ajax="false" target="_blank">Zevideo</a></span>',
         dark: getThemeFromLocalStorage(1),
         open:'con',
         app:false,
