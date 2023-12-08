@@ -71,10 +71,9 @@ $cclass=' px-2 bg-blue-500 text-white rounded-full';
 
 <?php $this->widget('Widget_Metas_Tag_Cloud',array('sort' => 'count', 'ignoreZeroCount' => true, 'desc' => true, 'limit' => 30))->to($tags); ?>  
 <?php while($tags->next()){
-if(mb_strlen($tags->name,'UTF8')<4&&$tags->name!='韩国'&&$tags->name!='日本'&&$tags->name!='美国'&&$tags->name!='中国'&&$tags->name!='动画'){
 ?>  
 <a rel="tag" href="<?php echo $sousou; ?>?niandai=<?php echo $niandai; ?>&tag=<?php $tags->mid(); ?>&cat=<?php echo $cat.$gj; ?>&site=<?php echo $site; ?>&zhuangtai=<?php echo $zhuangtai; ?>" class="<?php echo $aclass; ?><?php if($tag==$tags->mid){echo $cclass;} ?>"><?php $tags->name(); ?></a>
-<?php }} ?>
+<?php } ?>
 
 </div>
 
