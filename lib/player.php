@@ -8,8 +8,6 @@ $url=$_GET['url'];
 <html lang="zh-CN">
 <head>
 <title><?php if(!empty($_GET['title'])){echo urldecode($_GET['title']);}else{echo 'Plyr播放器';}?></title>
-
-<meta name="referrer" content="never">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <link href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/plyr/3.6.12/plyr.min.css" type="text/css" rel="stylesheet" />
 <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/hls.js/1.1.5-0.canary.8255/hls.min.js"></script>
